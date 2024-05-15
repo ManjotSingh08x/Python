@@ -1,12 +1,10 @@
-print("hello world")
-a = "something"
-if a == "something":
-    print(a)
 
-
-def functionacalojdf(input):
-    if input:
+def line_repeater(input):
         print(input)
+        
+answer = int(input("enter a number"))
+line_repeater(answer)
 
-answer = input("enter a number")
-functionacalojdf(answer)
+for i in range(answer):
+    print(f'this number is {i}')
+    
