@@ -5,7 +5,7 @@ try:
     answer = int(input("enter a number: "))
     line_repeater(answer)
     for i in range(answer):
-        print(f'this number is {i}')
+        print(f'this number is {i+1}')
     
         
 except: 
