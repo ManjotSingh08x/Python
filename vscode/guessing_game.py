@@ -1,9 +1,11 @@
+#27 May 2024 Manjot Singh 
+# This program is a guessing game where a number is choosen from 0 to 100 including both end points 
+
 import random 
-def display_game(number_of_attempts):
+def display_game(life_index):
 	answer = random.randint(0,100)
 	print("lets play a game \n")
-	print(f"you are given {number_of_attempts} tries")
-	life_index = 10 
+	print(f"you are given {life_index} tries") 
 	while life_index > 0:
 		attempt = int(input("guess the number (between 1 to 100): "))
 		if attempt < answer:
