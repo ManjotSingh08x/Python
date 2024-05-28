@@ -1,1 +1,12 @@
-places = ["Norway", "Dalhousie", "Canada", "Himalya", "j"]
+places = ["Norway", "Dalhousie", "Canada", "Himalya", "Gurdaspur"]
+print(places)
+print(places)
+print(sorted(places, reverse=True))
+print(places)
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+places.sort()
+print(places)
+print(places.sort(reverse=True))
