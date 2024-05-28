@@ -1,0 +1,1 @@
+places = ["Norway", "Dalhousie", "Canada", "Himalya", "j"]
