@@ -1,5 +1,6 @@
 #27 May 2024 Manjot Singh 
 # This program is a guessing game where a number is choosen from 0 to 100 including both end points 
+# by default number of lifes is fixed at 10 but can be changed
 
 import random 
 def display_game(life_index):
