@@ -11,3 +11,6 @@ print('the last three items are:')
 print(pizzas[-3:])
 
 friend_pizzas = pizzas[:]
+pizzas.append('mithu special')
+friend_pizzas.append('friend special')
+
