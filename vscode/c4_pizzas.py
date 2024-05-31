@@ -1,7 +1,8 @@
+"""Module displaying usage of slicing and manipulating lists"""
+
 pizzas = ["peperonni", 'cheese', 'farmhouse', 'chicken', 'pineapple', "spicy", 'special']
 for pizza in pizzas:
     print(f"I like {pizza} pizza")
-    
 print("I really like all kinds of pizzas")
 print("the first three items are: ")
 print(pizzas[0:3])
