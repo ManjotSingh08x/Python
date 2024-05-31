@@ -22,4 +22,3 @@ print()
 print("my friend's favourite pizzas are:")
 for pizza in friend_pizzas:
     print(pizza, end=' ')
-

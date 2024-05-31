@@ -1,3 +1,4 @@
+"""diplayes the list manipulation methods"""
 places = ["Norway", "Dalhousie", "Canada", "Himalya", "Gurdaspur"]
 print(places)
 print(places)
