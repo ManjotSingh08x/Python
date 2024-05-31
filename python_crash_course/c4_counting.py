@@ -7,7 +7,7 @@ print("mathematical output: ", one_mil*(one_mil + 1)/2)
 
 odd_list = []
 for number in range(1,20,2):
-    odd_list.append(number)
+    odd_list.append(number,)
 print("list of odd numbers from 1 to 20:")
 print(odd_list)
 
