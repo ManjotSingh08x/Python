@@ -1,10 +1,10 @@
 
 import random
 def display_game(life_index):
-    """eplaining stuff"""
     answer = random.randint(0,100)
     print("lets play a game \n")
     print(f"you are given {life_index} tries")
+    
     while life_index > 0:
         attempt = int(input("guess the number (between 1 to 100): "))
         if attempt < answer:

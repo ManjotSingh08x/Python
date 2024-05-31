@@ -1,4 +1,5 @@
-guest_list = ['Albert Einstien', 'Nicola Tesla', 'BR. Ambedkar', 'Eminem', 'Stan']
+guest_list = ['Albert Einstien', 'Nicola Tesla', 
+              'BR. Ambedkar', 'Eminem', 'Stan']
 
 guest_removed = 'BR. Ambedkar'
 guest_list.remove(guest_removed)
@@ -20,5 +21,4 @@ for guest in guest_list:
     
 del guest_list[1]
 del guest_list[0]
-
 print(guest_list)
