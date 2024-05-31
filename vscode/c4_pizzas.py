@@ -14,3 +14,11 @@ friend_pizzas = pizzas[:]
 pizzas.append('mithu special')
 friend_pizzas.append('friend special')
 
+print('my favourite pizzas are:')
+for pizza in pizzas:
+    print(pizza, end=' ')
+print()
+print("my friend's favourite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza, end=' ')
+
