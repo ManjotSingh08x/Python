@@ -1,4 +1,3 @@
-"""Module displaying usage of slicing and manipulating lists"""
 
 pizzas = ["peperonni", 'cheese', 'farmhouse', 'chicken', 'pineapple', "spicy", 'special']
 for pizza in pizzas:
