@@ -1,6 +1,6 @@
 
 import random
-def display_game(life_index):
+def display_game(life_index: int):
     answer = random.randint(0,100)
     print("lets play a game \n")
     print(f"you are given {life_index} tries")
