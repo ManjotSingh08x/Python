@@ -1,7 +1,7 @@
 HI this is my first project or learning experience with Python using VS Code with github integration.
 i am planning on learning python skills to improve my college experience.
-the small projects and files are derived from the book "Python Crash Course, Third Edition".
-this repository is a collection of tasks and exercises provided in the book.
+the small projects and files are derived from the books "Python Crash Course, Third Edition" along with "Impractical Python Projects".
+this repository is a collection of tasks and exercises provided in the books.
 here is the list of projects i should be able to implement in python after the two books:
 
 1. a terminal calculator that uses stack structure to calculate values
