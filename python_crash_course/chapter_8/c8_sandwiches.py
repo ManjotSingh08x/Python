@@ -1,8 +1,12 @@
-def make_sandwich(*ingredients):
-    print('Your sandwich has following ingredients:')
-    for ingredient in ingredients:
-        print(f'- {ingredient}')
+import sandwich
         
-make_sandwich('bread', 'tomato', 'sauce', 'popcorn')
-make_sandwich('bread', 'chicken', 'tomato')
-make_sandwich('bread', 'egg', 'sauce', 'potato', 'stuart little', 'creatine')
+sandwich.make_sandwich('bread', 'tomato', 'sauce', 'popcorn')
+sandwich.make_sandwich('bread', 'chicken', 'tomato')
+sandwich.make_sandwich(
+    'bread',
+    'egg',
+    'sauce',
+    'potato',
+    'stuart little',
+    'creatine'
+    )
