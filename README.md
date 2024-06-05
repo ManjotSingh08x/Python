@@ -8,8 +8,9 @@ here is the list of projects i should be able to implement in python after the t
 2. a visual implementation of that calculator.
 3. a pyhsics ball boucing simulation 
 4. binary search algorithm implementation
-5. solved tick tack toe using min-mac algorithm 
-6. some form of SQL interation
+5. solved tick tack toe using min-max algorithm 
+6. Data analysis on JEE Adv 2024 results
+7. Chess 
 
 my favorite themes:
 1. Sublime Monokai
