@@ -1,5 +1,3 @@
-from typing import Any
-
 
 class User:
     def __init__(self, first_name, last_name, age, gender, login_attempts=0) -> None:

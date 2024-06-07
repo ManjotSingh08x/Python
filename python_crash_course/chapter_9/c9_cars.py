@@ -1,5 +1,4 @@
-from car import ElectricCar
-from car import Car
+from car import ElectricCar, Car
 
     
         
