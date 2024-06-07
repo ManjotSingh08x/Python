@@ -25,6 +25,21 @@ class Restaurant:
             self.number_served += number
         else:
             print("decreasing number of served customers is not possible")
+            
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, number_served=0):
+        super().__init__(restaurant_name, "ice-cream", number_served)
+        self.flavours = ['vanilla', 'strawberry', 'chocolate', 'butterscotch']
+        
+    def display_flavours(self):
+        print('We serve the following flavours: ')
+        for flavour in self.flavours:
+            print(f'- {flavour}')
+    
+my_stand = IceCreamStand("My stand", 400)
+my_stand.describe_restaurant()
+my_stand.display_flavours()
+        
         
         
 rest1 = Restaurant("Delhi Dhaba", 'Indian')
