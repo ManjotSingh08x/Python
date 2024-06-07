@@ -1,0 +1,7 @@
+In Python you can create games
+In Python you can create functions
+In Python you can create classes
+In Python you can create data visualisations 
+In Python you can create machine learning models 
+In Python you can create simple apis
+In Python you can create projects
