@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class User:
     def __init__(self, first_name, last_name, age, gender, login_attempts=0) -> None:
         self.first_name = first_name
@@ -26,9 +29,29 @@ class User:
     
     def display_login_attempts(self):
         print(f"you have tried to login {self.login_attempts} times.")
+        
+class Privileges:
+    def __init__(self, privileges: list) -> None:
+        self.privileges = privileges
+        
+    def show_privileges(self):
+        print("These are the privileges of the Admin:")
+        for privilege in self.privileges:
+            print(f'- {privilege}')
+        
+class Admin(User):
+    def __init__(self, first_name, last_name, age, gender, login_attempts=0) -> None:
+        super().__init__(first_name, last_name, age, gender, login_attempts)
+        self.privileges = Privileges([
+            'can add post',
+            'can delete post',
+            'can ban user',
+        ])
+        
+
     
     
-user1 = User("Mohit", "Kumar", 30, "Male")
+user1 = Admin("Mohit", "Kumar", 30, "Male")
 user2 = User("Harry", "Singh", 19, "Male")
 user3 = User("Samriti", "Rani", 22, "Female")
 
@@ -46,3 +69,5 @@ user1.increment_login_attempts(4)
 user1.display_login_attempts()
 user1.reset_login_attempts()
 user1.display_login_attempts()
+
+user1.privileges.show_privileges()

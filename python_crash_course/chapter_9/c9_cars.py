@@ -37,7 +37,8 @@ class Car:
 class Battery:
     """A simple attempt to model a battery for an electric car"""
     
-    def __init__(self, battery_size=40):
+    def __init__(self, battery_size):
+        """initialises the battery"""
         self.battery_size = battery_size
     
     def describe_battery(self):
@@ -52,20 +53,32 @@ class Battery:
             range = 225
         
         print(f'This car can go about {range} miles on a full charge')
-            
+    
+    def upgrade_battery(self):
+        """upgrades battery capacity from 40 to 65"""
+        if self.battery_size == 40:
+            self.battery_size = 65
+            print("your battery has been upgraded 40 -> 65")
+        else:
+            print('your battery is already upgraded')
+         
+         
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles"""
     
-    def __init__(self, make, model, year) -> None:
+    def __init__(self, make, model, year, battery_size=40) -> None:
         """Initialise attributes of parent class and new attributes of child"""
         super().__init__(make, model, year)
-        self.battery = Battery()
+        self.battery = Battery(battery_size)
     
     
         
 my_leaf = ElectricCar('nissan', 'leaf', 2024)
 print(my_leaf.get_descriptive_name())
 my_leaf.battery.describe_battery()
+my_leaf.battery.get_range()
+my_leaf.battery.upgrade_battery()
+my_leaf.battery.upgrade_battery()
 my_leaf.battery.get_range()
 
 my_used_car = Car('Sabaru', 'outback', 2019)
