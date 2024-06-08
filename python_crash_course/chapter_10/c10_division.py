@@ -13,4 +13,5 @@ while True:
         print(answer)
     except ZeroDivisionError:
         print("You can't divide by 0!!")
-
+    except ValueError:
+        print("Please enter a numerical value")
