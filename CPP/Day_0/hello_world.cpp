@@ -2,12 +2,14 @@
 
 using namespace std;
 
-void teachphy(){
-    cout << "I am your teacher";
+void teachphy(int hours){
+    for(int i = 1; i <= hours; i++){
+        cout << "I am your teacher" << endl;
+    }
 }
 
 int main(){
     cout << "Hello World" << endl;
-    teachphy();
+    teachphy(5);
     return 1;
 }
