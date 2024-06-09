@@ -12,21 +12,14 @@ def get_new_user(path):
     print(f"we'll remember you when you come back, {username}!")
 
 def user_name_confirmed(user_info: dict):
+    """Returns the confirmation that the current user is the person who last ran the program
+    if he is isnt, it returns false for resubmision of forms"""
     confirmation = input(f"Is {user_info['username']} your username?(y/n) ")
     if confirmation.lower() == 'y':
         return True
     else:
         return False
 
-def greet_user(path):
-    """greets the user using info stored in json"""
-    user_info = get_stored_user_info(path)
-    if user_info != None and user_name_confirmed(user_info):
-        print(f'Welcome back, {user_info['username']}!')
-        print(f"Your age is {user_info['age']}", 
-            f"and your gender is {user_info['gender']}")
-    else: 
-        user_info = get_new_user(path)
 
 def get_stored_user_info(path):
     "Retrieves user info from json file"
@@ -37,6 +30,16 @@ def get_stored_user_info(path):
     else:
         return None
 
+def greet_user(path):
+    """greets the user using info stored in json"""
+    user_info = get_stored_user_info(path)
+    if user_info != None and user_name_confirmed(user_info):
+        print(f'Welcome back, {user_info['username']}!')
+        print(f"Your age is {user_info['age']}", 
+            f"and your gender is {user_info['gender']}")
+    else: 
+        user_info = get_new_user(path)
+        
 path = Path('chapter_10/username.json')
 
 if __name__ == '__main__':
