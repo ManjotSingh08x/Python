@@ -17,8 +17,16 @@ int main(){
     // to return a float, we need to express numerator as a float
     // float/ int returns float and double/int returns double
     cout << "a / b = " << a / b << endl;
-    cout << "a / b (in float) " << (float)a/b << endl;
+    cout << "a / b (in float) " << (float)a / b << endl;
     cout << "a % b = " << a % b << endl;
+
+    //displaying relational operation
+    cout << "a < b: " << (a < b) << endl; // false
+    cout << "a > b: " << (a > b) << endl; // true
+    cout << "a <= b: " << (a <= b) << endl; // false
+    cout << "a >= b: " << (a >= b) << endl; // true 
+    cout << "a != b: " << (a != b) << endl; // true 
+    cout << "a == b: " << (a == b) << endl; // false
 
     // to convert a lowercase letter into uppercase letter we use this technique
     char char1 = 'h';
