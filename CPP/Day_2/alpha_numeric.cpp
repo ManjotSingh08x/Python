@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     char ch;
-    cout << 'Enter a character or number or symbol: ';
+    cout << "Enter a character or number: ";
     cin >> ch;
 
     if (ch >= '0' && ch <= '9'){
@@ -17,5 +17,8 @@ int main(){
     else if (ch >= 'A' && ch <= 'Z'){
         cout << "Uppercase Value\n";
     }
-
+    else{
+        cout << "No alphabet or number detected";
+    }
+    return 0;
 }
