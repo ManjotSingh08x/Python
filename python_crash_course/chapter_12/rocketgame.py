@@ -23,12 +23,15 @@ class RocketGame:
     def _check_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                sys.exit
+                sys.exit()
     
     def _update_screen(self):
         self.screen.fill((255,255,255))
         self.rocket.blitme()
         pygame.display.flip()
-
+        
+if __name__ == '__main__':
+    rg = RocketGame()
+    rg.run_game()
 
     
