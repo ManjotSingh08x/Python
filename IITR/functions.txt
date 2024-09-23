@@ -1,0 +1,3 @@
+isprime
+sqrt function 
+fibonnaci 
