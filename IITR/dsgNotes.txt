@@ -1,0 +1,11 @@
+keggle.com for acquiring datasets 
+medium, towards data science for getting ideas
+github for already existinf projects 
+image colourizer
+text NER
+colon cancer analysis
+neural style transfer 
+q learning 
+ppo
+actercritic
+pikabot

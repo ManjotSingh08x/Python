@@ -19,4 +19,3 @@ class Llist:
         counter = 1
         
         
-e
