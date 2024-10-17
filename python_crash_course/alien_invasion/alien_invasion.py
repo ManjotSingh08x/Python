@@ -147,8 +147,13 @@ class AlienInvasion:
         if not self.aliens:
             # Destroy existing bullets and create new fleet.abs
             self.bullets.empty()
+            self.ship.center_ship()
             self._create_fleet()
             self.settings.increase_speed()
+            
+            # Increase level
+            self.stats.level += 1
+            self.sb.prep_level()
     
     def _create_fleet(self):
         """Create the fleet of aliens."""
@@ -204,6 +209,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             # Decrement ships_left
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
             
             # Get rid of any remaining bullets and aliens
             self.bullets.empty()
@@ -212,7 +218,6 @@ class AlienInvasion:
             # Create a new fleet and center the Ship
             self._create_fleet()
             self.ship.center_ship()
-            print("Ship hit")
             
             # Pause
             sleep(0.5)
@@ -238,6 +243,8 @@ class AlienInvasion:
             # reset the game statistics
             self.stats.reset_stats()
             self.sb.prep_score()
+            self.sb.prep_level()
+            self.sb.prep_ships()
             self.game_active = True
             
             # get rid of any remaining bullets
