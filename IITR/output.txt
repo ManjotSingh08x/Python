@@ -1,0 +1,10 @@
+Area of a circle with radius  5 is 78.540
+Perimeter of a circle with radius  5 is 31.416
+Area of a square with length  6 is 36.000
+Perimeter of a square with length  6 is 24.000
+Area of a rectangle with length  2 and width  4 is 8.000
+Perimeter of a rectangle with length  2 and width  4 is 12.000
+Area of a pentagon with length  10 is 172.048
+Perimeter of a pentagon with length  10 is 50.000
+Area of a triangle with lengths  3,  4, and  5 is 6.000
+Perimeter of a triangle with lengths  3,  4, and  5 is 12.000
