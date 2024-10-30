@@ -1,5 +1,5 @@
-import main
 import pygame
+import main
 
 class Bird:
     IMGS = main.BIRD_IMGS
