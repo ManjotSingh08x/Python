@@ -1,6 +1,5 @@
 import numpy as np
 
-# Define matrix A
 A= np.array([[8, 6, 2, 3],
             [3, 8, 4, 3],
             [5, 2, 6, 8],
@@ -14,19 +13,19 @@ Upper = np.zeros((length, length))  # Initialize U as a zero matrix for the uppe
 
 # LU decomposition
 for i in range(length):
-    # Compute U's row (i.e., U[i][j] for all j >= i)
+# Compute U's row (i.e., U[i][j] for all j >= i)
     for j in range(i, length):
-        # Calculate U[i, j] as A[i, j] minus the dot product of the corresponding
-        # elements in the lower and upper parts up to the i-th element.
+# Calculate U[i, j] as A[i, j] minus the dot product of the corresponding
+# elements in the lower and upper parts up to the i-th element.
         Upper[i, j] = A[i, j] - np.dot(Upper[:i, j], Lower[i, :i])
     
-    # Compute L's column (i.e., L[j][i] for all j > i) since it is lower traingle
+# Compute L's column (i.e., L[j][i] for all j > i) since it is lower traingle
     for j in range(i + 1, length):
-        # Calculate L[j, i] by dividing the result of A[j, i] minus the dot product of
-        # corresponding elements in U and L up to the i-th element by U[i, i].
+# Calculate L[j, i] by dividing the result of A[j, i] minus the dot product of
+# corresponding elements in U and L up to the i-th element by U[i, i].
         Lower[j, i] = (A[j, i] - np.dot(Upper[:i, i], Lower[j, :i])) / Upper[i, i]
 
-# Display the resulting U and L matrices
+
 print("Upper Triangular Matrix U:")
 print(Upper)
 print("Lower Triangular Matrix L:")
