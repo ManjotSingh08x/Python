@@ -49,4 +49,3 @@ def display_result(result_list, n):
 # Main execution
 n = int(input("Enter a number: "))
 display_result(calculate_fibDP(n), n)
-
